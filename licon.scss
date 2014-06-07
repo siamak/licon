@@ -1,4 +1,4 @@
-@import ‘mixins’;
+@import '_config';
 
 $basecolor:#ddd; // color licon, change it.
 $size:32px; // licon on playground! (base on 32px).
@@ -104,36 +104,33 @@ $size:32px; // licon on playground! (base on 32px).
     }
 }
 
-/* i.licon-scissors */
-.licon-scissors{}
-
 /* i.licon-check */
 .licon-check{
-    width: $size/16;height:$size/2;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);
+    width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);
     &:after{
-        position: absolute;bottom:-$size/8;left:-$size/10;width: $size/16;height: $size/4;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
+        position: absolute;bottom:-$size/4 + $size/32;left:-$size/4;width: $size/16;height: $size/2;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
     }
 }
 
 /* i.licon-remove */
 .licon-remove{
-    width: $size/16;height:$size/2;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);
+    width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);
     &:after{
-        position: absolute;width: $size/16;height:$size/2;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
+        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
     }
 }
 
 /* i.licon-plus */
 .licon-plus{
-    width: $size/16;height:$size/2;background-color:$basecolor;@include border-radius($size/4);
+    width: $size/16;height:$size;background-color:$basecolor;@include border-radius($size/4);
     &:after{
-        position: absolute;width: $size/16;height:$size/2;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
+        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
     }
 }
 
 /* i.licon-magnifier */
 .licon-magnifier{
-    width: $size/2;height:$size/2;border:$size/16 solid $basecolor;@include border-radius(100%);
+    width: $size;height:$size;border:$size/16 solid $basecolor;@include border-radius(100%);
     &:after{
         position: absolute;width: $size/16;height:$size/4;background-color:$basecolor;bottom:-$size/5;left:-$size/8;@include transform(rotate(45deg));@include border-radius($size/4);
     }
@@ -169,14 +166,14 @@ $size:32px; // licon on playground! (base on 32px).
     }
 }
 
-/* i.licon-medal */
-.licon-medal{
-    width: $size/2;height:$size/2;background-color:$basecolor;@include border-radius(100%);
+/* i.licon-tv */
+.licon-tv{
+    width: $size;height:ceil($size/1.4);border:$size/16 solid $basecolor;@include border-radius($size/8);
     &:before{
-        position: absolute;width: $size/8;height:$size/3;background-color:$basecolor;bottom:-$size/3;left:0;@include transform(rotate(20deg));
+        position: absolute;width: $size/16;height:$size/3;background-color:$basecolor;top:- ceil($size/3);left:$size/4;@include transform(rotate(-45deg));
     }
     &:after{
-        position: absolute;width: $size/8;height:$size/3;background-color:$basecolor;bottom:-$size/3;right:0;@include transform(rotate(-20deg));
+        position: absolute;width: $size/16;height:$size/3;background-color:$basecolor;top:- ceil($size/3);right:$size/4;@include transform(rotate(-135deg));
     }
 }
 
@@ -230,10 +227,10 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-arrowup{
     width: $size;height:$size;
     &:after{
-        position: absolute;width: $size/16;height: $size/4;right: $size/2 + $size/32;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(-45deg));
+        position: absolute;width: $size/16;height: $size/2;right: $size/4 + $size/16;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(-45deg));
     }
     &:before{
-        position: absolute;width: $size/16;height: $size/4;left: $size/4;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(45deg));
+        position: absolute;width: $size/16;height: $size/2;left: $size/4;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(45deg));
     }
 }
 
@@ -241,10 +238,10 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-arrowdown{
     width: $size;height:$size;
     &:after{
-        position: absolute;width: $size/16;height: $size/4;right: $size/2 + $size/32;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(45deg));
+        position: absolute;width: $size/16;height: $size/2;right: $size/4 + $size/16;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(45deg));
     }
     &:before{
-        position: absolute;width: $size/16;height: $size/4;left: $size/4;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(135deg));
+        position: absolute;width: $size/16;height: $size/2;left: $size/4;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(135deg));
     }
 }
 
@@ -252,10 +249,10 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-arrowleft{
     width: $size;height:$size;
     &:after{
-        position: absolute;width: $size/16;height: $size/4;right: ceil($size/1.5);top: ceil($size/2.5);background-color: $basecolor;display: block;@include transform(rotate(-45deg));
+        position: absolute;width: $size/16;height: $size/2;right: $size/2;top: $size/4 + $size/16;background-color: $basecolor;display: block;@include transform(rotate(-45deg));
     }
     &:before{
-        position: absolute;width: $size/16;height: $size/4;left: $size/4;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(45deg));
+        position: absolute;width: $size/16;height: $size/2;right: $size/2;top: 0;background-color: $basecolor;display: block;@include transform(rotate(45deg));
     }
 }
 
@@ -263,10 +260,10 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-arrowright{
     width: $size;height:$size;
     &:after{
-        position: absolute;width: $size/16;height: $size/4;right: ceil($size/1.5);top: ceil($size/2.5);background-color: $basecolor;display: block;@include transform(rotate(45deg));
+        position: absolute;width: $size/16;height: $size/2;left: $size/2;top: $size/4 + $size/16;background-color: $basecolor;display: block;@include transform(rotate(45deg));
     }
     &:before{
-        position: absolute;width: $size/16;height: $size/4;left: $size/4;top: $size/4;background-color: $basecolor;display: block;@include transform(rotate(-45deg));
+        position: absolute;width: $size/16;height: $size/2;left: $size/2;top: 0;background-color: $basecolor;display: block;@include transform(rotate(-45deg));
     }
 }
 
@@ -291,9 +288,9 @@ $size:32px; // licon on playground! (base on 32px).
 
 /* i.licon-certificate */
 .licon-certificate {
-    height: $size/2;width: $size/2;background-color: $basecolor;
+    height: $size;width: $size;background-color: $basecolor;
     &:before, &:after{
-        height: $size/2;width: $size/2;background-color: $basecolor;position: absolute;margin-left:-$size/4;
+        height: $size;width: $size;background-color: $basecolor;position: absolute;margin-left:-$size/2;
     }
     &:before{
         @include transform(rotate(30deg));
