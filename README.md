@@ -35,7 +35,7 @@ Then You add `.licon-*` in HTML files. Also you can see licon's icons:
 * `i.licon-info`
 * `i.licon-mail`
 * `i.licon-link`
-* `i.licon-medal`
+* `i.licon-tv`
 * `i.licon-clock`
 * `i.licon-user`
 * `i.licon-book`
