@@ -14,7 +14,9 @@ $size:32px; // licon on playground! (base on 32px).
 }
 /* i.licon-disc */
 .licon-disc{width: $size;height:$size;border:$size/16 solid $basecolor;@include border-radius(100%);position: relative;display: inline-block;
-    &:after{content:'';width: $size/8;height:$size/8;position: absolute;left:50%;top:50%;margin-left:-$size/8;margin-top:-$size/8;border:$size/16 solid $basecolor;@include border-radius(100%);}
+    &:before{
+        content:'';width: $size/8;height:$size/8;position: absolute;left:50%;top:50%;margin-left:-$size/8;margin-top:-$size/8;border:$size/16 solid $basecolor;@include border-radius(100%);
+    }
 }
 
 /* i.licon-reorder */
@@ -33,17 +35,23 @@ $size:32px; // licon on playground! (base on 32px).
 
 /* i.licon-lock */
 .licon-lock{
-    width: $size;height: $size/2 + $size/8;border:$size/16 solid $basecolor;@include border-radius($size/8);
+    width: $size;height: $size;
     &:before{
-        width: $size/2;height: $size/2.5;@include border-radius($size/4 $size/4 0 0);position: absolute;left:50%;top:0;margin-left:- round($size/3);margin-top:-$size/2;border:$size/16 solid $basecolor;border-bottom-width:0;
+        width: $size - $size/8;height: $size/2 + $size/8;border:$size/16 solid $basecolor;@include border-radius($size/8);position: absolute;left:0;bottom:$size/16;
+    }
+    &:after{
+        width: $size/2;height: ceil($size/2.5);@include border-radius($size/4 $size/4 0 0);position: absolute;left:$size/8 + $size/16;top:- $size/4;border:$size/16 solid $basecolor;border-bottom-width:0;
     }
 }
 
 /* i.licon-bag */
 .licon-bag{
-    width: $size;height: $size;border:$size/16 solid $basecolor;@include border-radius(0 0 $size/4 $size/4);
+    width: $size;height: $size;
     &:before{
-        width: $size/2;height: $size/2;@include border-radius($size/4 $size/4 0 0);position: absolute;left:50%;top:50%;margin-left:- ($size/4) - $size/14;margin-top:-$size + $size/8;border:$size/16 solid $basecolor;border-bottom-width:0;
+        width: $size - $size/8;height: $size - $size/8;border:$size/16 solid $basecolor;@include border-radius(0 0 $size/4 $size/4);position: absolute;left:0;
+    }
+    &:after{
+        width: $size/2;height: ceil($size/3);@include border-radius($size/4 $size/4 0 0);position: absolute;left:$size/8 + $size/16;top:- $size/4;border:$size/16 solid $basecolor;border-bottom-width:0;
     }
 }
 
@@ -60,8 +68,13 @@ $size:32px; // licon on playground! (base on 32px).
 
 /* i.licon-iphone */
 .licon-iphone{
-    width: $size/1.5;height:$size;border:$size/16 solid $basecolor;@include border-radius($size/8);
-    &:after{width: $size/16;height: $size/16;border:$size/32 solid darken($basecolor,10%);@include border-radius(100%);position: absolute;bottom:$size/16;left:$size/4 - $size/32;}
+    width: $size;height: $size;
+    &:before{
+        width: ceil($size/1.8);height:$size - $size/8;border:$size/16 solid $basecolor;@include border-radius($size/8);position: absolute;left:$size/8;
+    }
+    &:after{
+        width: $size/16;height: $size/16;border:$size/32 solid darken($basecolor,10%);@include border-radius(100%);position: absolute;bottom:$size/8;left:ceil($size/2.5);
+    }
 }
 
 /* i.licon-finder */
@@ -87,44 +100,57 @@ $size:32px; // licon on playground! (base on 32px).
 
 /* i.licon-macbook */
 .licon-macbook{
-    width: $size;height: $size/1.3;border:$size/16 solid $basecolor;@include border-radius($size/16);
+    width: $size;height: $size;
     &:before{
-        width: $size + $size/8;height: $size/16;position: absolute;left:-$size/8;bottom:-$size/4;background-color:darken($basecolor,10%);
+        width: $size - $size/8;height: ceil($size/1.6);border:$size/16 solid $basecolor;@include border-radius($size/16);position: absolute;left:0;
     }
     &:after{
-        width: $size/3;height:$size/32;position: absolute;bottom:-$size/4 + 1;left:$size/4;background-color:darken($basecolor,60%);z-index: 1;
+        width: $size + $size/8;height: $size/16;position: absolute;left:-$size/16;bottom:$size/16;background-color:darken($basecolor,10%);
     }
+
 }
 
 /* i.licon-dollar */
 .licon-dollar{
-    width: $size;height: $size/1.3;border:$size/16 solid $basecolor;
+    width: $size;height: $size;
     &:before{
-        content:'$';width: $size/2 - $size/16;height: $size/2 - $size/16;position: absolute;left:$size/2 - $size/4 - 1;top:$size/4 - $size/8 - 1;background-color:darken($basecolor,5%);@include border-radius(100%);font-size:ceil($size/3);color:darken($basecolor,50%);font-family:Georgia,"Times New Roman",serif, sans;
+        width: $size - $size/8;height: ceil($size/1.4);border:$size/16 solid $basecolor;position: absolute;left:0;
+    }
+    &:after{
+        content:'$';width: $size/2 - $size/16;height: $size/2 - $size/16;position: absolute;left:$size/4 + $size/32;top:$size/8 + $size/16;background-color:darken($basecolor,5%);@include border-radius(100%);font-size:ceil($size/3);color:darken($basecolor,50%);font-family:Georgia,"Times New Roman",serif, sans;
     }
 }
 
 /* i.licon-check */
 .licon-check{
-    width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);
+    width: $size;height: $size;
+    &:before{
+        width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);position: absolute;right:ceil($size/3);
+    }
     &:after{
-        position: absolute;bottom:-$size/4 + $size/32;left:-$size/4;width: $size/16;height: $size/2;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
+        position: absolute;bottom:$size/16;left:$size/8;width: $size/16;height: ceil($size/2.8);background-color:$basecolor;@include transform(rotate(-45deg));@include border-radius($size/4);
     }
 }
 
 /* i.licon-remove */
 .licon-remove{
-    width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);
+    width: $size;height: $size;
+    &:before{
+        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(45deg));@include border-radius($size/4);
+    }
     &:after{
-        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
+        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(-45deg));@include border-radius($size/4);
     }
 }
 
 /* i.licon-plus */
 .licon-plus{
-    width: $size/16;height:$size;background-color:$basecolor;@include border-radius($size/4);
+    width: $size;height: $size;
+    &:before{
+        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include border-radius($size/4);left:$size/2;
+    }
     &:after{
-        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);
+        position: absolute;width: $size/16;height:$size;background-color:$basecolor;@include transform(rotate(90deg));@include border-radius($size/4);left:$size/2;
     }
 }
 
@@ -138,15 +164,18 @@ $size:32px; // licon on playground! (base on 32px).
 
 /* i.licon-info */
 .licon-info{
-    width: $size/8;height:$size/2;background-color: $basecolor;@include border-radius($size/8);
+    width: $size;height:$size;
+    &:before{
+        position: absolute;width: $size/8;height:$size/2;background-color: $basecolor;@include border-radius($size/8);bottom:$size/4;left:ceil($size/2.5);
+    }
     &:after{
-        position: absolute;width: $size/8;height:$size/8;background-color:$basecolor;top:-$size/5;left:0;@include border-radius($size/4);
+        position: absolute;width: $size/8;height:$size/8;background-color:$basecolor;top:$size/16;left:ceil($size/2.5);@include border-radius($size/4);
     }
 }
 
 /* i.licon-mail */
 .licon-mail{
-    width: $size;height:$size/1.2;border:$size/16 solid $basecolor;@include border-radius($size/8);
+    width: $size;height:ceil($size/1.4);border:$size/16 solid $basecolor;@include border-radius($size/8);
     &:before{
         position: absolute;width: $size/2;height:$size/16;background-color:$basecolor;top:$size/16;left:0;@include border-radius($size/4);@include transform(rotate(30deg));
     }
@@ -159,10 +188,10 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-link{
     width: $size;height:$size;
     &:before{
-        position: absolute;width: $size/2;height:$size/8;border:$size/16 solid $basecolor;top:$size/4;left:0;@include border-radius($size/4);@include transform(rotate(-45deg));
+        position: absolute;width: $size/2;height:$size/8;border:$size/16 solid $basecolor;top:$size/4;left:$size/4;@include border-radius($size/4);@include transform(rotate(-45deg));
     }
     &:after{
-        position: absolute;width: $size/2;height:$size/8;border:$size/16 solid $basecolor;top:$size/2;left:-$size/8;@include border-radius($size/4);@include transform(rotate(-45deg));
+        position: absolute;width: $size/2;height:$size/8;border:$size/16 solid $basecolor;top:$size/2;left:$size/8;@include border-radius($size/4);@include transform(rotate(-45deg));
     }
 }
 
@@ -190,23 +219,29 @@ $size:32px; // licon on playground! (base on 32px).
 
 /* i.licon-user */
 .licon-user{
-    width: $size/2;height:$size/2;border:$size/16 solid $basecolor;@include border-radius(100%);
+    width: $size;height:$size;
+    &:before{
+        width: $size/2;height:$size/2;border:$size/16 solid $basecolor;@include border-radius(100%);position: absolute;left:$size/8 + $size/16;
+    }
     &:after{
-        position: absolute;width: $size/2;height:$size/4;border:$size/16 solid $basecolor;bottom:-$size/2;left:-$size/8;@include border-radius($size/8);
+        position: absolute;width: $size/2;height:$size/4;border:$size/16 solid $basecolor;bottom:-$size/16;left:$size/8 + $size/16;@include border-radius($size/8);
     }
 }
 
 /* i.licon-book */
 .licon-book{
-    width: $size;height:$size;border:$size/16 solid $basecolor;@include border-radius($size/6 0 0 $size/6);
+    width: $size;height: $size;
+    &:before{
+        position: absolute;width: $size - $size/4;height:$size - $size/16;border:$size/16 solid $basecolor;@include border-radius(ceil($size/6) 0 0 ceil($size/6) );left:0;
+    }
     &:after{
-        position: absolute;width: $size;height:$size/16;background-color:$basecolor;bottom:$size/8;@include border-radius($size/8);
+        position: absolute;width: $size - $size/8;height:$size/16;background-color:$basecolor;bottom:$size/8;@include border-radius($size/8);left:0;
     }
 }
 
 /* i.licon-paper */
 .licon-paper{
-    width: $size/1.3;height:$size;border:$size/16 solid $basecolor;@include border-radius($size/8);
+    width: ceil($size/1.3);height:$size;border:$size/16 solid $basecolor;@include border-radius($size/8);
     &:before{
         width: $size/3;height: $size/16;background-color:$basecolor;@include border-radius($size/8);position: absolute;top:$size/5;left:$size/20;box-shadow:0 $size/4 0 $basecolor, 0 $size/2 0 $basecolor;
     }
@@ -267,11 +302,14 @@ $size:32px; // licon on playground! (base on 32px).
     }
 }
 
-/* i.licon-microphone */
-.licon-microphone{
-    width: $size/4;height:$size/2;border:$size/16 solid $basecolor;@include border-radius($size/8);
+/* i.licon-battery */
+.licon-battery{
+    width: $size - $size/8;height:$size/2;border:$size/16 solid $basecolor;@include border-radius($size/8);
+    &:before{
+        position: absolute;width: $size/8;height: $size/4;background-color:$basecolor;right:- $size/8;top:$size/32;@include border-radius(0 $size/16 $size/16 0);
+    }
     &:after{
-        position: absolute;width: ceil($size/2.9);height: $size/8;right: - ceil($size/8) - ceil($size/16);top: ceil($size/2.5);border:$size/16 solid $basecolor;display: block;@include border-radius(0 0 $size/2 $size/2);border-top-width:0;
+        position: absolute;width: ceil($size/8);height: ceil($size/5);left: ceil($size/15);top: $size/16;background-color:$basecolor;@include border-radius($size/16);box-shadow:$size/4 - $size/32 0 0 $basecolor, $size/2 - $size/16 0 0 $basecolor;
     }
 }
 
@@ -288,9 +326,9 @@ $size:32px; // licon on playground! (base on 32px).
 
 /* i.licon-certificate */
 .licon-certificate {
-    height: $size;width: $size;background-color: $basecolor;
+    height: ceil($size/1.6);width: ceil($size/1.6);background-color: $basecolor;
     &:before, &:after{
-        height: $size;width: $size;background-color: $basecolor;position: absolute;margin-left:-$size/2;
+        height: ceil($size/1.6);width: ceil($size/1.6);background-color: $basecolor;position: absolute;margin-left:- ceil($size/3.2);
     }
     &:before{
         @include transform(rotate(30deg));
