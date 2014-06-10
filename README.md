@@ -44,7 +44,7 @@ Then You add `.licon-*` in HTML files. Also you can see licon's icons:
 * `i.licon-arrowdown`
 * `i.licon-arrowleft`
 * `i.licon-arrowright`
-* `i.licon-microphone`
+* `i.licon-battery`
 * `i.licon-sun`
 * `i.licon-certificate`
 * `i.licon-imac`
@@ -53,4 +53,4 @@ Then You add `.licon-*` in HTML files. Also you can see licon's icons:
 
 Created by Siamak Mokhtari — June, 2014.
 
-Licensed under [The MIT license](https://github.com/siamakmokhtari/licon/blob/master/LICENSE).
+Licensed under [MIT](https://github.com/siamakmokhtari/licon/blob/master/LICENSE).
