@@ -575,21 +575,21 @@
   width: 32px;
   height: 32px; }
   .licon-user:before {
-    width: 16px;
-    height: 16px;
+    width: 11px;
+    height: 11px;
     border: 2px solid #dddddd;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -o-border-radius: 100%;
     border-radius: 100%;
     position: absolute;
-    left: 6px; }
+    left: 8px; }
   .licon-user:after {
     position: absolute;
     width: 16px;
     height: 8px;
     border: 2px solid #dddddd;
-    bottom: -2px;
+    bottom: 2px;
     left: 6px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -821,7 +821,7 @@
     height: 8px;
     background-color: #dddddd;
     right: -4px;
-    top: 1px;
+    top: 2px;
     -webkit-border-radius: 0 2px 2px 0;
     -moz-border-radius: 0 2px 2px 0;
     -o-border-radius: 0 2px 2px 0;
@@ -829,7 +829,7 @@
   .licon-battery:after {
     position: absolute;
     width: 4px;
-    height: 7px;
+    height: 8px;
     left: 3px;
     top: 2px;
     background-color: #dddddd;
