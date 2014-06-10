@@ -221,10 +221,10 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-user{
     width: $size;height:$size;
     &:before{
-        width: $size/2;height:$size/2;border:$size/16 solid $basecolor;@include border-radius(100%);position: absolute;left:$size/8 + $size/16;
+        width: ceil($size/3);height:ceil($size/3);border:$size/16 solid $basecolor;@include border-radius(100%);position: absolute;left:$size/4;
     }
     &:after{
-        position: absolute;width: $size/2;height:$size/4;border:$size/16 solid $basecolor;bottom:-$size/16;left:$size/8 + $size/16;@include border-radius($size/8);
+        position: absolute;width: $size/2;height:$size/4;border:$size/16 solid $basecolor;bottom:$size/16;left:$size/8 + $size/16;@include border-radius($size/8);
     }
 }
 
@@ -306,10 +306,10 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-battery{
     width: $size - $size/8;height:$size/2;border:$size/16 solid $basecolor;@include border-radius($size/8);
     &:before{
-        position: absolute;width: $size/8;height: $size/4;background-color:$basecolor;right:- $size/8;top:$size/32;@include border-radius(0 $size/16 $size/16 0);
+        position: absolute;width: $size/8;height: $size/4;background-color:$basecolor;right:- $size/8;top:$size/16;@include border-radius(0 $size/16 $size/16 0);
     }
     &:after{
-        position: absolute;width: ceil($size/8);height: ceil($size/5);left: ceil($size/15);top: $size/16;background-color:$basecolor;@include border-radius($size/16);box-shadow:$size/4 - $size/32 0 0 $basecolor, $size/2 - $size/16 0 0 $basecolor;
+        position: absolute;width: $size/8;height: $size/4;left: ceil($size/15);top: $size/16;background-color:$basecolor;@include border-radius($size/16);box-shadow:$size/4 - $size/32 0 0 $basecolor, $size/2 - $size/16 0 0 $basecolor;
     }
 }
 
