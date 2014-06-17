@@ -328,7 +328,7 @@ $size:32px; // licon on playground! (base on 32px).
 .licon-certificate {
     height: ceil($size/1.6);width: ceil($size/1.6);background-color: $basecolor;
     &:before, &:after{
-        height: ceil($size/1.6);width: ceil($size/1.6);background-color: $basecolor;position: absolute;margin-left:- ceil($size/3.2);
+        height: ceil($size/1.6);width: ceil($size/1.6);background-color: $basecolor;position: absolute;left: 0;
     }
     &:before{
         @include transform(rotate(30deg));
