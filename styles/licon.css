@@ -885,7 +885,7 @@
     width: 20px;
     background-color: #dddddd;
     position: absolute;
-    margin-left: -10px; }
+    left: 0; }
   .licon-certificate:before {
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
