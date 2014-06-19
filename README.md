@@ -28,6 +28,9 @@ Then You add `.licon-*` in HTML files. Also you can see licon's icons:
 * `i.licon-trash`
 * `i.licon-macbook`
 * `i.licon-dollar`
+* `i.licon-pound`
+* `i.licon-euro`
+* `i.licon-yen`
 * `i.licon-check`
 * `i.licon-remove`
 * `i.licon-plus`
