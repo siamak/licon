@@ -8,7 +8,7 @@
 You can install Licon with [Bower](http://bower.io) and include to your projects:
 
 ```
-bower install licon -g
+bower install licon
 ```
 
 ## Syntax
