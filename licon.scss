@@ -110,17 +110,6 @@ $size:32px; // licon on playground! (base on 32px).
 
 }
 
-/* i.licon-dollar */
-.licon-dollar{
-    width: $size;height: $size;
-    &:before{
-        width: $size - $size/8;height: ceil($size/1.4);border:$size/16 solid $basecolor;position: absolute;left:0;
-    }
-    &:after{
-        content:'$';width: $size/2 - $size/16;height: $size/2 - $size/16;position: absolute;left:$size/4 + $size/32;top:$size/8 + $size/16;background-color:darken($basecolor,5%);@include border-radius(100%);font-size:ceil($size/3);color:darken($basecolor,50%);font-family:Georgia,"Times New Roman",serif, sans;
-    }
-}
-/* i.licon-dollar */
 .licon-dollar,
 /* i.licon-pound */
 .licon-pound,
