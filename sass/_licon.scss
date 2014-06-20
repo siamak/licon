@@ -290,6 +290,21 @@ $size:32px; // licon on playground! (base on 32px).
     }
 }
 
+/* fixed arrowdup and arrowdown in retina display */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .licon-arrowup{
+        &:before{
+            left: $size/4 + $size/16;
+        }
+    }
+
+    .licon-arrowdown{
+        &:before{
+            left: $size/4 + $size/16;
+        }
+    }
+}
+
 /* i.licon-arrowleft */
 .licon-arrowleft{
     width: $size;height:$size;
