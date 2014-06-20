@@ -290,6 +290,20 @@
     }
 }
 
+/* fixed arrowdup and arrowdown in retina display */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .licon-arrowup{
+        &:before{
+            left: @size/4 + 2;
+        }
+    }
+    .licon-arrowdown{
+        &:before{
+            left: @size/4 + 2;
+        }
+    }
+}
+
 /* i.licon-arrowleft */
 .licon-arrowleft{
     width: @size;height:@size;
