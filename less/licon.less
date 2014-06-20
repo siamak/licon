@@ -1,0 +1,359 @@
+@basecolor:#ddd; // color licon, change it.
+@size:32px; // licon on playground! (base on 32px).
+
+[class^="licon-"] {
+    display: inline-block; /* block, inline-block, inline-flex, table */
+    vertical-align: middle;
+    position: relative;
+    font-style:normal;
+    &:before, &:after{
+        content:'';pointer-events: none;
+    }
+}
+/* i.licon-disc */
+.licon-disc{width: @size;height:@size;border:@size/16 solid @basecolor;.border-radius(100%);position: relative;display: inline-block;
+    &:before{
+        content:'';width: @size/8;height:@size/8;position: absolute;left:50%;top:50%;margin-left:-@size/8;margin-top:-@size/8;border:@size/16 solid @basecolor;.border-radius(100%);
+    }
+}
+
+/* i.licon-reorder */
+.licon-reorder{
+    width: @size;height: @size/16;background-color:@basecolor;
+    &:before, &:after{
+        position: absolute;background-color:@basecolor;width: @size;height:@size/16;left:0;
+    }
+    &:before{
+        top:-@size/4;
+    }
+    &:after{
+        bottom:-@size/4;
+    }
+}
+
+/* i.licon-lock */
+.licon-lock{
+    width: @size;height: @size;
+    &:before{
+        width: @size - @size/8;height: @size/2 + @size/8;border:@size/16 solid @basecolor;.border-radius(@size/8);position: absolute;left:0;bottom:@size/16;
+    }
+    &:after{
+        width: @size/2;height: ceil(@size/2.5);.border-radius(@size/4 @size/4 0 0);position: absolute;left:@size/8 + @size/16;top:- @size/4;border:@size/16 solid @basecolor;border-bottom-width:0;
+    }
+}
+
+/* i.licon-bag */
+.licon-bag{
+    width: @size;height: @size;
+    &:before{
+        width: @size - @size/8;height: @size - @size/8;border:@size/16 solid @basecolor;.border-radius(0 0 @size/4 @size/4);position: absolute;left:0;
+    }
+    &:after{
+        width: @size/2;height: ceil(@size/3);.border-radius(@size/4 @size/4 0 0);position: absolute;left:@size/8 + @size/16;top:- @size/4;border:@size/16 solid @basecolor;border-bottom-width:0;
+    }
+}
+
+/* i.licon-mug */
+.licon-mug{
+    width: @size;height: @size;border:@size/16 solid @basecolor;.border-radius(0 0 ceil(@size/3) ceil(@size/3));
+    &:before{
+        width: @size/4;height: @size/4;.border-radius(@size/4 0 0 @size/4);position: absolute;left:0;top:0;margin-left:-(@size/2) + (@size/6);margin-top:@size/7;border:@size/16 solid @basecolor;border-right-width:0;
+    }
+    &:after{
+        width: @size/2 + @size/8;height: @size/16;background-color:darken(@basecolor,15%);top:-@size/4;left:@size/8;display:block;position: absolute;
+    }
+}
+
+/* i.licon-iphone */
+.licon-iphone{
+    width: @size;height: @size;
+    &:before{
+        width: ceil(@size/1.8);height:@size - @size/8;border:@size/16 solid @basecolor;.border-radius(@size/8);position: absolute;left:@size/8;
+    }
+    &:after{
+        width: @size/16;height: @size/16;border:@size/32 solid darken(@basecolor,10%);.border-radius(100%);position: absolute;bottom:@size/8;left:ceil(@size/2.5);
+    }
+}
+
+/* i.licon-finder */
+.licon-finder{
+    width: @size;height:@size;border:@size/16 solid @basecolor; .border-radius(@size/8);
+    &:before{
+        position: absolute;top:0;left:0;width: 100%;height:40%;background-color:@basecolor;
+    }
+    &:after{width:@size/8;height:@size/8;background-color:darken(@basecolor,40%);position:absolute;box-shadow:-@size/5 0 0 0 darken(@basecolor,40%),@size/5 0 0 0 darken(@basecolor,40%);left:@size/4;top:@size/8;margin:-@size/16 0;.border-radius(100%);
+    }
+}
+
+/* i.licon-trash */
+.licon-trash{
+    width: @size;height: @size;border:@size/16 solid @basecolor;.border-radius(0 0 @size/8 @size/8);border-top-width:0;
+    &:before{
+        width: @size/2;height: @size/8;position: absolute;left:50%;top:50%;margin-left:- (@size/4) - @size/14;margin-top:ceil(-@size + @size/5);border:@size/16 solid @basecolor;border-bottom-width:0;
+    }
+    &:after{
+        width: @size + @size/8;height: @size/16;position: absolute;left:0;top:0;background-color:@basecolor;margin-top:-@size/16;margin-left:-@size/8;
+    }
+}
+
+/* i.licon-macbook */
+.licon-macbook{
+    width: @size;height: @size;
+    &:before{
+        width: @size - @size/8;height: ceil(@size/1.6);border:@size/16 solid @basecolor;.border-radius(@size/16);position: absolute;left:0;
+    }
+    &:after{
+        width: @size + @size/8;height: @size/16;position: absolute;left:-@size/16;bottom:@size/16;background-color:darken(@basecolor,10%);
+    }
+
+}
+
+/* i.licon-dollar */
+.licon-dollar,
+.licon-pound,
+.licon-euro,
+.licon-yen{
+    width: @size;height: @size;
+    &:before{
+        width: @size - @size/8;height: ceil(@size/1.4);border:@size/16 solid @basecolor;position: absolute;left:0;
+    }
+    &:after{
+        content:'$';width: @size/2 - @size/16;height: @size/2 - @size/16;position: absolute;left:@size/4 + @size/32;top:@size/8 + @size/16;background-color:darken(@basecolor,5%);.border-radius(100%);font-size:ceil(@size/3);color:darken(@basecolor,50%);font-family:Georgia,"Times New Roman",serif, sans;text-align:center;
+    }
+    &.licon-euro:after{
+        content:'€';
+    }
+    &.licon-pound:after{
+        content:'£';
+    }
+    &.licon-yen:after{
+        content:'¥';
+    }
+}
+
+/* i.licon-check */
+.licon-check{
+    width: @size;height: @size;
+    &:before{
+        width: @size/16;height:@size;background-color:@basecolor;.transform(rotate(45deg));.border-radius(@size/4);position: absolute;right:ceil(@size/3);
+    }
+    &:after{
+        position: absolute;bottom:@size/16;left:@size/8;width: @size/16;height: ceil(@size/2.8);background-color:@basecolor;.transform(rotate(-45deg));.border-radius(@size/4);
+    }
+}
+
+/* i.licon-remove */
+.licon-remove{
+    width: @size;height: @size;
+    &:before{
+        position: absolute;width: @size/16;height:@size;background-color:@basecolor;.transform(rotate(45deg));.border-radius(@size/4);
+    }
+    &:after{
+        position: absolute;width: @size/16;height:@size;background-color:@basecolor;.transform(rotate(-45deg));.border-radius(@size/4);
+    }
+}
+
+/* i.licon-plus */
+.licon-plus{
+    width: @size;height: @size;
+    &:before{
+        position: absolute;width: @size/16;height:@size;background-color:@basecolor;.border-radius(@size/4);left:@size/2;
+    }
+    &:after{
+        position: absolute;width: @size/16;height:@size;background-color:@basecolor;.transform(rotate(90deg));.border-radius(@size/4);left:@size/2;
+    }
+}
+
+/* i.licon-magnifier */
+.licon-magnifier{
+    width: @size;height:@size;border:@size/16 solid @basecolor;.border-radius(100%);
+    &:after{
+        position: absolute;width: @size/16;height:@size/4;background-color:@basecolor;bottom:-@size/5;left:-@size/8;.transform(rotate(45deg));.border-radius(@size/4);
+    }
+}
+
+/* i.licon-info */
+.licon-info{
+    width: @size;height:@size;
+    &:before{
+        position: absolute;width: @size/8;height:@size/2;background-color: @basecolor;.border-radius(@size/8);bottom:@size/4;left:ceil(@size/2.5);
+    }
+    &:after{
+        position: absolute;width: @size/8;height:@size/8;background-color:@basecolor;top:@size/16;left:ceil(@size/2.5);.border-radius(@size/4);
+    }
+}
+
+/* i.licon-mail */
+.licon-mail{
+    width: @size;height:ceil(@size/1.4);border:@size/16 solid @basecolor;.border-radius(@size/8);
+    &:before{
+        position: absolute;width: @size/2;height:@size/16;background-color:@basecolor;top:@size/16;left:0;.border-radius(@size/4);.transform(rotate(30deg));
+    }
+    &:after{
+        position: absolute;width: @size/2;height:@size/16;background-color:@basecolor;top:@size/16;right:0;.border-radius(@size/4);.transform(rotate(-30deg));
+    }
+}
+
+/* i.licon-link */
+.licon-link{
+    width: @size;height:@size;
+    &:before{
+        position: absolute;width: @size/2;height:@size/8;border:@size/16 solid @basecolor;top:@size/4;left:@size/4;.border-radius(@size/4);.transform(rotate(-45deg));
+    }
+    &:after{
+        position: absolute;width: @size/2;height:@size/8;border:@size/16 solid @basecolor;top:@size/2;left:@size/8;.border-radius(@size/4);.transform(rotate(-45deg));
+    }
+}
+
+/* i.licon-tv */
+.licon-tv{
+    width: @size;height:ceil(@size/1.4);border:@size/16 solid @basecolor;.border-radius(@size/8);
+    &:before{
+        position: absolute;width: @size/16;height:@size/3;background-color:@basecolor;top:- ceil(@size/3);left:@size/4;.transform(rotate(-45deg));
+    }
+    &:after{
+        position: absolute;width: @size/16;height:@size/3;background-color:@basecolor;top:- ceil(@size/3);right:@size/4;.transform(rotate(-135deg));
+    }
+}
+
+/* i.licon-clock */
+.licon-clock{
+    width: @size;height:@size;border:@size/16 solid @basecolor;.border-radius(100%);
+    &:before{
+        position: absolute;width: @size/16;height:@size/3;background-color:@basecolor;bottom:@size/2.5;left:@size/2 - @size/14;.transform(rotate(0deg));
+    }
+    &:after{
+        position: absolute;width: @size/16;height:@size/4;background-color:@basecolor;bottom:@size/4;left:@size/2 - @size/6;.transform(rotate(90deg));
+    }
+}
+
+/* i.licon-user */
+.licon-user{
+    width: @size;height:@size;
+    &:before{
+        width: ceil(@size/3);height:ceil(@size/3);border:@size/16 solid @basecolor;.border-radius(100%);position: absolute;left:@size/4;
+    }
+    &:after{
+        position: absolute;width: @size/2;height:@size/4;border:@size/16 solid @basecolor;bottom:@size/16;left:@size/8 + @size/16;.border-radius(@size/8);
+    }
+}
+
+/* i.licon-book */
+.licon-book{
+    width: @size;height: @size;
+    &:before{
+        position: absolute;width: @size - @size/4;height:@size - @size/16;border:@size/16 solid @basecolor;.border-radius(ceil(@size/6) 0 0 ceil(@size/6) );left:0;
+    }
+    &:after{
+        position: absolute;width: @size - @size/8;height:@size/16;background-color:@basecolor;bottom:@size/8;.border-radius(@size/8);left:0;
+    }
+}
+
+/* i.licon-paper */
+.licon-paper{
+    width: ceil(@size/1.3);height:@size;border:@size/16 solid @basecolor;.border-radius(@size/8);
+    &:before{
+        width: @size/3;height: @size/16;background-color:@basecolor;.border-radius(@size/8);position: absolute;top:@size/5;left:@size/20;box-shadow:0 @size/4 0 @basecolor, 0 @size/2 0 @basecolor;
+    }
+    &:after{
+        width: @size/2;height: @size/16;background-color:@basecolor;.border-radius(@size/8);position: absolute;top:@size/14;left:@size/20;box-shadow:0 @size/4 0 @basecolor, 0 @size/2 0 @basecolor;
+    }
+}
+
+/* i.licon-ban */
+.licon-ban{
+    width: @size;height:@size;border:@size/16 solid @basecolor;.border-radius(100%);
+    &:after{
+        position: absolute;width: @size/16;height:@size;background-color:@basecolor;bottom:-@size/16;left:ceil(@size/2.5);.border-radius(@size/8);.transform(rotate(-45deg))
+    }
+}
+
+/* i.licon-arrowup */
+.licon-arrowup{
+    width: @size;height:@size;
+    &:after{
+        position: absolute;width: @size/16;height: @size/2;right: @size/4 + @size/16;top: @size/4;background-color: @basecolor;display: block;.transform(rotate(-45deg));
+    }
+    &:before{
+        position: absolute;width: @size/16;height: @size/2;left: @size/4;top: @size/4;background-color: @basecolor;display: block;.transform(rotate(45deg));
+    }
+}
+
+/* i.licon-arrowdown */
+.licon-arrowdown{
+    width: @size;height:@size;
+    &:after{
+        position: absolute;width: @size/16;height: @size/2;right: @size/4 + @size/16;top: @size/4;background-color: @basecolor;display: block;.transform(rotate(45deg));
+    }
+    &:before{
+        position: absolute;width: @size/16;height: @size/2;left: @size/4;top: @size/4;background-color: @basecolor;display: block;.transform(rotate(135deg));
+    }
+}
+
+/* i.licon-arrowleft */
+.licon-arrowleft{
+    width: @size;height:@size;
+    &:after{
+        position: absolute;width: @size/16;height: @size/2;right: @size/2;top: @size/4 + @size/16;background-color: @basecolor;display: block;.transform(rotate(-45deg));
+    }
+    &:before{
+        position: absolute;width: @size/16;height: @size/2;right: @size/2;top: 0;background-color: @basecolor;display: block;.transform(rotate(45deg));
+    }
+}
+
+/* i.licon-arrowright */
+.licon-arrowright{
+    width: @size;height:@size;
+    &:after{
+        position: absolute;width: @size/16;height: @size/2;left: @size/2;top: @size/4 + @size/16;background-color: @basecolor;display: block;.transform(rotate(45deg));
+    }
+    &:before{
+        position: absolute;width: @size/16;height: @size/2;left: @size/2;top: 0;background-color: @basecolor;display: block;.transform(rotate(-45deg));
+    }
+}
+
+/* i.licon-battery */
+.licon-battery{
+    width: @size - @size/8;height:@size/2;border:@size/16 solid @basecolor;.border-radius(@size/8);
+    &:before{
+        position: absolute;width: @size/8;height: @size/4;background-color:@basecolor;right:- @size/8;top:@size/16;.border-radius(0 @size/16 @size/16 0);
+    }
+    &:after{
+        position: absolute;width: @size/8;height: @size/4;left: ceil(@size/15);top: @size/16;background-color:@basecolor;.border-radius(@size/16);box-shadow:@size/4 - @size/32 0 0 @basecolor, @size/2 - @size/16 0 0 @basecolor;
+    }
+}
+
+/* i.licon-sun */
+.licon-sun{
+    width: @size/2;height:@size/2;border:@size/16 solid @basecolor;.border-radius(100%);
+    &:before{
+        position: absolute;width: @size/8;height: @size/16;right: - @size/4;top: round(@size/6);background-color:@basecolor;display: block;.border-radius(@size/8);box-shadow: 0 -@size + @size/4 0 @basecolor;
+    }
+    &:after{
+        position: absolute;width: @size/16;height: @size/8;right: round(@size/6);top: round(@size/2);background-color:@basecolor;display: block; .border-radius(@size/8);box-shadow: 0 0-@size + @size/4 0 @basecolor;
+    }
+}
+
+/* i.licon-certificate */
+.licon-certificate {
+    height: ceil(@size/1.6);width: ceil(@size/1.6);background-color: @basecolor;
+    &:before, &:after{
+        height: ceil(@size/1.6);width: ceil(@size/1.6);background-color: @basecolor;position: absolute;left:0;
+    }
+    &:before{
+        .transform(rotate(30deg));
+    }
+    &:after{
+        .transform(rotate(-30deg));
+    }
+}
+
+/* i.licon-imac */
+.licon-imac{
+    width: @size;height:ceil(@size/1.2);border:@size/16 solid @basecolor;.border-radius(@size/8);
+    &:before{
+        position: absolute;bottom:0;left:0;width: 100%;height:20%;background-color:@basecolor;
+    }
+    &:after{width:@size/5;height:@size/6;background-color:darken(@basecolor,5%);position:absolute;left:@size/3;bottom:-@size/4;.border-radius(@size/32);
+    }
+}
