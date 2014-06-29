@@ -1,0 +1,1036 @@
+/*
+    {Licon} is a simple, useful and lightness pack-icon that made with Pure CSS3 by Siamak Mokhtari (@sia_mac) at @FictionTeam.
+    It has Sass version so it can easily be modified and merged into modern projects.
+    It provides all the useful icons for good design without adding any images or fonts.
+*/
+[class^="licon-"] {
+  display: inline-block;
+  /* block, inline-block, inline-flex, table */
+  vertical-align: middle;
+  position: relative;
+  font-style: normal;
+}
+[class^="licon-"]:before,
+[class^="licon-"]:after {
+  content: '';
+  pointer-events: none;
+}
+/* i.licon-disc */
+.licon-disc {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  position: relative;
+  display: inline-block;
+}
+.licon-disc:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+/* i.licon-reorder */
+.licon-reorder {
+  width: 32px;
+  height: 2px;
+  background-color: #dddddd;
+}
+.licon-reorder:before,
+.licon-reorder:after {
+  position: absolute;
+  background-color: #dddddd;
+  width: 32px;
+  height: 2px;
+  left: 0;
+}
+.licon-reorder:before {
+  top: -8px;
+}
+.licon-reorder:after {
+  bottom: -8px;
+}
+/* i.licon-lock */
+.licon-lock {
+  width: 32px;
+  height: 32px;
+}
+.licon-lock:before {
+  width: 28px;
+  height: 20px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+.licon-lock:after {
+  width: 16px;
+  height: 13px;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  left: 6px;
+  top: - 8px;
+  border: 2px solid #dddddd;
+  border-bottom-width: 0;
+}
+/* i.licon-bag */
+.licon-bag {
+  width: 32px;
+  height: 32px;
+}
+.licon-bag:before {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 0 0 8px 8px;
+  -moz-border-radius: 0 0 8px 8px;
+  -o-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  left: 0;
+}
+.licon-bag:after {
+  width: 16px;
+  height: 11px;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  left: 6px;
+  top: - 8px;
+  border: 2px solid #dddddd;
+  border-bottom-width: 0;
+}
+/* i.licon-mug */
+.licon-mug {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 0 0 11px 11px;
+  -moz-border-radius: 0 0 11px 11px;
+  -o-border-radius: 0 0 11px 11px;
+  border-radius: 0 0 11px 11px;
+}
+.licon-mug:before {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 8px 0 0 8px;
+  -moz-border-radius: 8px 0 0 8px;
+  -o-border-radius: 8px 0 0 8px;
+  border-radius: 8px 0 0 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -10.66666667px;
+  margin-top: 4.57142857px;
+  border: 2px solid #dddddd;
+  border-right-width: 0;
+}
+.licon-mug:after {
+  width: 20px;
+  height: 2px;
+  background-color: #b7b7b7;
+  top: -8px;
+  left: 4px;
+  display: block;
+  position: absolute;
+}
+/* i.licon-iphone */
+.licon-iphone {
+  width: 32px;
+  height: 32px;
+}
+.licon-iphone:before {
+  width: 18px;
+  height: 28px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+  left: 4px;
+}
+.licon-iphone:after {
+  width: 2px;
+  height: 2px;
+  border: 1px solid #c4c4c4;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 4px;
+  left: 13px;
+}
+/* i.licon-finder */
+.licon-finder {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.licon-finder:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #dddddd;
+}
+.licon-finder:after {
+  width: 4px;
+  height: 4px;
+  background-color: #777777;
+  position: absolute;
+  box-shadow: -6.4px 0 0 0 #777777, 6.4px 0 0 0 #777777;
+  left: 8px;
+  top: 4px;
+  margin: -2px 0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+/* i.licon-trash */
+.licon-trash {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  border-top-width: 0;
+}
+.licon-trash:before {
+  width: 16px;
+  height: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: - 5.71428571px;
+  margin-top: -25px;
+  border: 2px solid #dddddd;
+  border-bottom-width: 0;
+}
+.licon-trash:after {
+  width: 36px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #dddddd;
+  margin-top: -2px;
+  margin-left: -4px;
+}
+/* i.licon-macbook */
+.licon-macbook {
+  width: 32px;
+  height: 32px;
+}
+.licon-macbook:before {
+  width: 28px;
+  height: 20px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+}
+.licon-macbook:after {
+  width: 36px;
+  height: 2px;
+  position: absolute;
+  left: -2px;
+  bottom: 2px;
+  background-color: #c4c4c4;
+}
+/* i.licon-dollar */
+.licon-dollar,
+.licon-pound,
+.licon-euro,
+.licon-yen {
+  width: 32px;
+  height: 32px;
+}
+.licon-dollar:before,
+.licon-pound:before,
+.licon-euro:before,
+.licon-yen:before {
+  width: 28px;
+  height: 23px;
+  border: 2px solid #dddddd;
+  position: absolute;
+  left: 0;
+}
+.licon-dollar:after,
+.licon-pound:after,
+.licon-euro:after,
+.licon-yen:after {
+  content: '$';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  background-color: #d0d0d0;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  font-size: 11px;
+  color: #5e5e5e;
+  font-family: Georgia, "Times New Roman", serif, sans;
+  text-align: center;
+}
+.licon-dollar.licon-euro:after,
+.licon-pound.licon-euro:after,
+.licon-euro.licon-euro:after,
+.licon-yen.licon-euro:after {
+  content: '€';
+}
+.licon-dollar.licon-pound:after,
+.licon-pound.licon-pound:after,
+.licon-euro.licon-pound:after,
+.licon-yen.licon-pound:after {
+  content: '£';
+}
+.licon-dollar.licon-yen:after,
+.licon-pound.licon-yen:after,
+.licon-euro.licon-yen:after,
+.licon-yen.licon-yen:after {
+  content: '¥';
+}
+/* i.licon-check */
+.licon-check {
+  width: 32px;
+  height: 32px;
+}
+.licon-check:before {
+  width: 2px;
+  height: 32px;
+  background-color: #dddddd;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  right: 11px;
+}
+.licon-check:after {
+  position: absolute;
+  bottom: 2px;
+  left: 4px;
+  width: 2px;
+  height: 12px;
+  background-color: #dddddd;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+/* i.licon-remove */
+.licon-remove {
+  width: 32px;
+  height: 32px;
+}
+.licon-remove:before {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background-color: #dddddd;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+.licon-remove:after {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background-color: #dddddd;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+/* i.licon-plus */
+.licon-plus {
+  width: 32px;
+  height: 32px;
+}
+.licon-plus:before {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background-color: #dddddd;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  left: 16px;
+}
+.licon-plus:after {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background-color: #dddddd;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  left: 16px;
+}
+/* i.licon-magnifier */
+.licon-magnifier {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+.licon-magnifier:after {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background-color: #dddddd;
+  bottom: -6.4px;
+  left: -4px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+/* i.licon-info */
+.licon-info {
+  width: 32px;
+  height: 32px;
+}
+.licon-info:before {
+  position: absolute;
+  width: 4px;
+  height: 16px;
+  background-color: #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  bottom: 8px;
+  left: 13px;
+}
+.licon-info:after {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #dddddd;
+  top: 2px;
+  left: 13px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+/* i.licon-mail */
+.licon-mail {
+  width: 32px;
+  height: 23px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.licon-mail:before {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #dddddd;
+  top: 2px;
+  left: 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.licon-mail:after {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #dddddd;
+  top: 2px;
+  right: 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+/* i.licon-link */
+.licon-link {
+  width: 32px;
+  height: 32px;
+}
+.licon-link:before {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  border: 2px solid #dddddd;
+  top: 8px;
+  left: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.licon-link:after {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  border: 2px solid #dddddd;
+  top: 16px;
+  left: 4px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* i.licon-tv */
+.licon-tv {
+  width: 32px;
+  height: 23px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.licon-tv:before {
+  position: absolute;
+  width: 2px;
+  height: 10.66666667px;
+  background-color: #dddddd;
+  top: - 11px;
+  left: 8px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.licon-tv:after {
+  position: absolute;
+  width: 2px;
+  height: 10.66666667px;
+  background-color: #dddddd;
+  top: - 11px;
+  right: 8px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+/* i.licon-clock */
+.licon-clock {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+.licon-clock:before {
+  position: absolute;
+  width: 2px;
+  height: 10.66666667px;
+  background-color: #dddddd;
+  bottom: 12.8px;
+  left: 13.71428571px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.licon-clock:after {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background-color: #dddddd;
+  bottom: 8px;
+  left: 10.66666667px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* i.licon-user */
+.licon-user {
+  width: 32px;
+  height: 32px;
+}
+.licon-user:before {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  left: 8px;
+}
+.licon-user:after {
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  border: 2px solid #dddddd;
+  bottom: 2px;
+  left: 6px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* i.licon-book */
+.licon-book {
+  width: 32px;
+  height: 32px;
+}
+.licon-book:before {
+  position: absolute;
+  width: 24px;
+  height: 30px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -o-border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
+  left: 0;
+}
+.licon-book:after {
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: #dddddd;
+  bottom: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  left: 0;
+}
+/* i.licon-paper */
+.licon-paper {
+  width: 25px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.licon-paper:before {
+  width: 10.66666667px;
+  height: 2px;
+  background-color: #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+  top: 6.4px;
+  left: 1.6px;
+  box-shadow: 0 8px 0 #dddddd, 0 16px 0 #dddddd;
+}
+.licon-paper:after {
+  width: 16px;
+  height: 2px;
+  background-color: #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: absolute;
+  top: 2.28571429px;
+  left: 1.6px;
+  box-shadow: 0 8px 0 #dddddd, 0 16px 0 #dddddd;
+}
+/* i.licon-ban */
+.licon-ban {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+.licon-ban:after {
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background-color: #dddddd;
+  bottom: -2px;
+  left: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* i.licon-arrowup */
+.licon-arrowup {
+  width: 32px;
+  height: 32px;
+}
+.licon-arrowup:after {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  right: 10px;
+  top: 8px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.licon-arrowup:before {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  left: 8px;
+  top: 8px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* i.licon-arrowdown */
+.licon-arrowdown {
+  width: 32px;
+  height: 32px;
+}
+.licon-arrowdown:after {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  right: 10px;
+  top: 8px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.licon-arrowdown:before {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  left: 8px;
+  top: 8px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+/* fixed arrowdup and arrowdown in retina display */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .licon-arrowup:before {
+    left: 10px;
+  }
+  .licon-arrowdown:before {
+    left: 10px;
+  }
+}
+/* i.licon-arrowleft */
+.licon-arrowleft {
+  width: 32px;
+  height: 32px;
+}
+.licon-arrowleft:after {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  right: 16px;
+  top: 10px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.licon-arrowleft:before {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  right: 16px;
+  top: 0;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* i.licon-arrowright */
+.licon-arrowright {
+  width: 32px;
+  height: 32px;
+}
+.licon-arrowright:after {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  left: 16px;
+  top: 10px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.licon-arrowright:before {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  left: 16px;
+  top: 0;
+  background-color: #dddddd;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* i.licon-battery */
+.licon-battery {
+  width: 28px;
+  height: 16px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.licon-battery:before {
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  background-color: #dddddd;
+  right: - 4px;
+  top: 2px;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  -o-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+}
+.licon-battery:after {
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  left: 3px;
+  top: 2px;
+  background-color: #dddddd;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 7px 0 0 #dddddd, 14px 0 0 #dddddd;
+}
+/* i.licon-sun */
+.licon-sun {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+.licon-sun:before {
+  position: absolute;
+  width: 4px;
+  height: 2px;
+  right: - 8px;
+  top: 5px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 -24px 0 #dddddd;
+}
+.licon-sun:after {
+  position: absolute;
+  width: 2px;
+  height: 4px;
+  right: 5px;
+  top: 16px;
+  background-color: #dddddd;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 -24px 0 #dddddd;
+}
+/* i.licon-certificate */
+.licon-certificate {
+  height: 20px;
+  width: 20px;
+  background-color: #dddddd;
+}
+.licon-certificate:before,
+.licon-certificate:after {
+  height: 20px;
+  width: 20px;
+  background-color: #dddddd;
+  position: absolute;
+  left: 0;
+}
+.licon-certificate:before {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.licon-certificate:after {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+/* i.licon-imac */
+.licon-imac {
+  width: 32px;
+  height: 27px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.licon-imac:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #dddddd;
+}
+.licon-imac:after {
+  width: 6.4px;
+  height: 5.33333333px;
+  background-color: #d0d0d0;
+  position: absolute;
+  left: 10.66666667px;
+  bottom: -8px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+}
