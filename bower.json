@@ -2,8 +2,5 @@
   "name": "licon",
   "version": "1.0.4",
   "description": "Licon is Lightness and Useful icons with Pure CSS3.",
-  "authors": [
-    "Siamak Mokhtari <s.mokhtari75@gmail.com>",
-    "Ahmad Karimpour <info@ahmadina.com>"
-  ]
+  "authors": "Siamak Mokhtari <s.mokhtari75@gmail.com>"
 }
