@@ -1,0 +1,13 @@
+{
+  "name": "licon",
+  "repo": "siamakmokhtari/licon",
+  "description": "Licon is Lightness and Useful icons with Pure CSS3.",
+  "version": "1.0.4",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "licon.css"
+  ]
+}
