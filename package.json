@@ -1,0 +1,20 @@
+{
+  "name": "licon",
+  "version": "1.0.4",
+  "description": "Licon is Lightness and Useful icons with Pure CSS3.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siamakmokhtari/licon.git"
+  },
+  "keywords": [
+    "licon",
+    "css3",
+    "icons"
+  ],
+  "author": "Siamak Mokhtari <s.mokhtari75@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siamakmokhtari/licon/issues"
+  },
+  "homepage": "https://github.com/siamakmokhtari/licon"
+}
