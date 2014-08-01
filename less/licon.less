@@ -11,11 +11,7 @@
     }
 }
 /* i.licon-disc */
-.licon-disc{width: @size;height:@size;border:@size/16 solid @basecolor;.border-radius(100%);position: relative;display: inline-block;
-    &:before{
-        content:'';width: @size/8;height:@size/8;position: absolute;left:50%;top:50%;margin-left:-@size/8;margin-top:-@size/8;border:@size/16 solid @basecolor;.border-radius(100%);
-    }
-}
+.licon-disc{width: @size;height:@size;border:@size/3 solid transparent;.border-radius(100%);position: relative;display: inline-block;box-shadow: 0 0 0 @size/12 @basecolor inset, 0 0 0 @size/16 @basecolor;}
 
 /* i.licon-reorder */
 .licon-reorder{
