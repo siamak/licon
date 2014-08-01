@@ -461,3 +461,109 @@ $size:32px; // licon on playground! (base on 32px).
         position: absolute;width: ceil($size/5);height: ceil($size/5);border: $size/16 solid $basecolor;@include border-radius(50%);top: 50%;left:50%;@include transform(translate(-50%, -50%));
     }
 }
+
+/* i.licon-smile */
+.licon-smile{
+    @include border-radius(50%);border: $size/16 solid $basecolor;height: ceil($size/1.1);
+    width: ceil($size/1.1);
+    &:before{@include border-radius(50%);background-color: $basecolor;box-shadow: ceil($size/3.5) 0 0 0 $basecolor;height: ceil($size/8);left: 22%;
+        position: absolute;top: 27%;width: ceil($size/8);
+    }
+    &:after{@include border-radius(50%);@include transform(translateX(-50%));border-color: transparent transparent $basecolor transparent;border-style: solid;border-width: $size/16;height: ceil($size/2);left:50%;
+        position: absolute;top: 6%;width: ceil($size/2);
+    }
+}
+
+/* i.licon-eye */
+.licon-eye{
+    @include border-radius(90% 0);@include transform(rotate(45deg));border: $size/16 solid $basecolor;height: ceil($size/1.1);
+    width: ceil($size/1.1);
+    &:before{@include border-radius(50%);@include transform(translate(-50%, -50%));border: $size/16 solid $basecolor;height: ceil($size/5);left: 50%;
+        position: absolute;top: 50%;width: ceil($size/5);
+    }
+}
+
+/* i.licon-sliders */
+.licon-sliders{height: $size;
+    width: $size;
+    &:before, &:after{@include transform(translateX(-50%));background-color: $basecolor;left: 50%;
+        position: absolute;
+    }
+    &:before{box-shadow: ceil($size/2.8) -1*ceil($size/3) $basecolor, -1*ceil($size/2.8) -1*ceil($size/2) $basecolor;height: ceil($size/7);top: 65%;
+        width: ceil($size/5);
+    }
+    &:after{background-color: $basecolor;box-shadow: ceil($size/2.8) 0 $basecolor, -1*ceil($size/2.8) 0 $basecolor;height:100%;
+        position: absolute;width: ceil($size/16);
+    }
+}
+
+/* i.licon-share */
+.licon-share{
+    height: ceil($size/3.8);width: ceil($size/3.8);@include border-radius(50%);background-color: $basecolor;box-shadow: ceil($size/1.5) -1*ceil($size/3) 0 0 $basecolor, ceil($size/1.5) 1*ceil($size/3) 0 0 $basecolor;margin: ceil($size/3) ceil($size/1.5) ceil($size/3) 0;
+    &:before, &:after{
+        position: absolute;width: ceil($size/1.5);height: ceil($size/16);background-color: $basecolor;
+    }
+    &:before{
+        top:-1*ceil($size/12);@include transform(rotate(-25deg));
+    }
+    &:after{
+        top:ceil($size/3.5);@include transform(rotate(25deg));
+    }
+}
+
+/* i.licon-sync */
+.licon-sync{
+    width: ceil($size/1.2);height: ceil($size/1.2);@include border-radius(50%);border-width: $size/16;border-style: solid;border-color: $basecolor transparent;
+    &:before, &:after{
+        position: absolute;width: 0;height: 0;border-width: ceil($size/6);border-style: solid;border-color: $basecolor transparent transparent;
+    }
+    &:before{
+        @include transform(rotate(-45deg));right: -1*ceil($size/5);top:0;
+    }
+    &:after{
+        @include transform(rotate(135deg));left: -1*ceil($size/5);bottom: 0;
+    }
+}
+
+/* i.licon-reset */
+.licon-reset{
+    width: ceil($size/1.2);height: ceil($size/1.2);@include border-radius(50%);border-width: $size/16;border-style: solid;border-color: $basecolor $basecolor $basecolor transparent;
+    &:before{
+        position: absolute;width: 0;height: 0;border-width: ceil($size/6);border-style: solid;border-color: $basecolor transparent transparent;@include transform(rotate(135deg));left: -1*ceil($size/5);bottom: 0;
+    }
+}
+
+/* i.licon-gear */
+.licon-gear{
+    width: ceil($size/1.7);height:ceil($size/1.7);border:ceil($size/9) solid transparent;@include border-radius(100%);position: relative;display: inline-block;box-shadow: 0 0 0 ceil($size/20) $basecolor inset, 0 0 0 ceil($size/12) $basecolor;margin: ceil($size/7);
+    &:before{
+        position: absolute;width: ceil($size/1.4);height:ceil($size/1.4);left: 50%;top: 50%;border: ceil($size/9) dotted $basecolor;@include border-radius(50%);@include transform(translate(-50%, -50%));
+    }
+}
+
+/* i.licon-signin */
+.licon-signin{
+    width: ceil($size/1.8);height: $size;border: $size/16 solid $basecolor;border-left: none;margin-left: ceil($size/7);
+    &:before{
+        position: absolute;width: ceil($size/3);height: ceil($size/3);left:-1*ceil($size/3.5);top:ceil($size/5);border: $size/16 solid $basecolor;border-bottom: none;border-left: none;@include transform(rotate(45deg));
+    }
+}
+
+/* i.licon-signout */
+.licon-signout{
+    width: ceil($size/1.8);height: $size;border: $size/16 solid $basecolor;border-right: none;margin-right: ceil($size/7);
+    &:before{
+        position: absolute;width: ceil($size/3);height: ceil($size/3);right:-1*ceil($size/16);top:ceil($size/5);border: $size/16 solid $basecolor;border-bottom: none;border-left: none;@include transform(rotate(45deg));
+    }
+}
+
+/* i.licon-support */
+.licon-support{
+    width: ceil($size/1.2);height: ceil($size/1.2);border: ceil($size/7) solid transparent; box-shadow: 0 0 0 1px $basecolor inset, 0 0 0 1px $basecolor;@include border-radius(50%);
+    &:before{
+        position:absolute;width: ceil($size/5);height: ceil($size/5);background-color: $basecolor;top: -1*ceil($size/12);left: -1*ceil($size/12);@include transform(rotate(45deg));box-shadow: ceil($size/1.4) 0 0 0 $basecolor;
+    }
+    &:after{
+        position:absolute;width: ceil($size/5);height: ceil($size/5);background-color: $basecolor;top: -1*ceil($size/12);right: -1*ceil($size/12);@include transform(rotate(135deg));box-shadow: ceil($size/1.4) 0 0 0 $basecolor;
+    }
+}
