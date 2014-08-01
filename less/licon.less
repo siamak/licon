@@ -443,14 +443,42 @@
 
 /* i.licon-file */
 .licon-file{
-    width: ceil(@size/1.5);height: ceil(@size/1.5);border: @size/16 solid @basecolor;border-top-width: 0;margin-top: ceil(@size/3);
+    width: ceil(@size/1.3);height: ceil(@size/1.5);border: @size/16 solid @basecolor;border-top-width: 0;margin-top: ceil(@size/3.8);
     &:before, &:after{
-        position:absolute;top:-1*ceil(@size/4);border-style: solid;
+        position:absolute;top:-1*ceil(@size/3.8);border-style: solid;
     }
     &:before{
         width: 0;height: 0;right:-1*@size/16;border-width: @size/6; border-color: transparent transparent #ddd #ddd;
     }
     &:after{
-        width: ceil(@size/3);height: ceil(@size/4);border-width: @size/16 0 0 @size/16;left: -1*@size/16;border-color: @basecolor;
+        width: ceil(@size/2.5);height: ceil(@size/4);border-width: @size/16 0 0 @size/16;left: -1*@size/16;border-color: @basecolor;
+    }
+}
+
+
+
+
+/* i.licon-folder */
+.licon-folder{
+    width: @size;height: ceil(@size/1.5);border: @size/16 solid @basecolor;border-top-color: transparent;.border-radius(ceil(@size/10));margin-top: ceil(@size/8);
+    &:before, &:after{
+        position: absolute;
+    }
+    &:before{
+        height: ceil(@size/8)+1;width: ceil(@size/3.5);top: -1*ceil(@size/6); left: -1*(ceil(@size/16))+1;border: @size/16 solid @basecolor;border-bottom-width: 0;.border-radius(ceil(@size/10) ceil(@size/10) 0 0);
+    }
+    &:after{
+        width: ceil(@size/1.9);height: 0; right:0;top:-1px;border-top: @size/16 solid @basecolor;
+    }   
+}
+
+
+
+
+/* i.licon-pin */
+.licon-pin{
+    width: ceil(@size/1.2);height: ceil(@size/1.2);border: @size/16 solid @basecolor;.border-radius(@size @size @size 0);.transform(rotate(-45deg));
+    &:before{
+        position: absolute;width: ceil(@size/5);height: ceil(@size/5);border: @size/16 solid @basecolor;.border-radius(50%);top: 50%;left:50%;.transform(translate(-50%, -50%));
     }
 }
