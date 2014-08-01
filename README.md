@@ -11,10 +11,6 @@ Bower:
 ```
 bower install licon
 ```
-npm:
-```
-npm install licon
-```
 
 ## Syntax
 
@@ -61,6 +57,13 @@ Then You add `.licon-*` in HTML files. Also you can see licon's icons:
 * `i.licon-sun`
 * `i.licon-certificate`
 * `i.licon-imac`
+* `i.licon-power`
+* `i.licon-heart`
+* `i.licon-infinity`
+* `i.licon-flag`
+* `i.licon-file`
+* `i.licon-folder`
+* `i.licon-pin`
 
 ### License
 
