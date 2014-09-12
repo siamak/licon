@@ -11,11 +11,7 @@
     }
 }
 /* i.licon-disc */
-.licon-disc{width: @size;height:@size;border:@size/16 solid @basecolor;.border-radius(100%);position: relative;display: inline-block;
-    &:before{
-        content:'';width: @size/8;height:@size/8;position: absolute;left:50%;top:50%;margin-left:-@size/8;margin-top:-@size/8;border:@size/16 solid @basecolor;.border-radius(100%);
-    }
-}
+.licon-disc{width: @size;height:@size;border:@size/3 solid transparent;.border-radius(100%);position: relative;display: inline-block;box-shadow: 0 0 0 @size/12 @basecolor inset, 0 0 0 @size/16 @basecolor;}
 
 /* i.licon-reorder */
 .licon-reorder{
@@ -38,7 +34,7 @@
         width: @size - @size/8;height: @size/2 + @size/8;border:@size/16 solid @basecolor;.border-radius(@size/8);position: absolute;left:0;bottom:@size/16;
     }
     &:after{
-        width: @size/2;height: ceil(@size/2.5);.border-radius(@size/4 @size/4 0 0);position: absolute;left:@size/8 + @size/16;top:- @size/4;border:@size/16 solid @basecolor;border-bottom-width:0;
+        width: @size/2;height: ceil(@size/2.5);.border-radius(@size/4 @size/4 0 0);position: absolute;left:@size/8 + @size/16;top:0- @size/4;border:@size/16 solid @basecolor;border-bottom-width:0;
     }
 }
 
@@ -49,7 +45,7 @@
         width: @size - @size/8;height: @size - @size/8;border:@size/16 solid @basecolor;.border-radius(0 0 @size/4 @size/4);position: absolute;left:0;
     }
     &:after{
-        width: @size/2;height: ceil(@size/3);.border-radius(@size/4 @size/4 0 0);position: absolute;left:@size/8 + @size/16;top:- @size/4;border:@size/16 solid @basecolor;border-bottom-width:0;
+        width: @size/2;height: ceil(@size/3);.border-radius(@size/4 @size/4 0 0);position: absolute;left:@size/8 + @size/16;top:0-@size/4;border:@size/16 solid @basecolor;border-bottom-width:0;
     }
 }
 
@@ -89,7 +85,7 @@
 .licon-trash{
     width: @size;height: @size;border:@size/16 solid @basecolor;.border-radius(0 0 @size/8 @size/8);border-top-width:0;
     &:before{
-        width: @size/2;height: @size/8;position: absolute;left:50%;top:50%;margin-left:- (@size/4) - @size/14;margin-top:ceil(-@size + @size/5);border:@size/16 solid @basecolor;border-bottom-width:0;
+        width: @size/2;height: @size/8;position: absolute;left:50%;top:50%;margin-left:0-(@size/4) - @size/14;margin-top:ceil(-@size + @size/5);border:@size/16 solid @basecolor;border-bottom-width:0;
     }
     &:after{
         width: @size + @size/8;height: @size/16;position: absolute;left:0;top:0;background-color:@basecolor;margin-top:-@size/16;margin-left:-@size/8;
@@ -209,10 +205,10 @@
 .licon-tv{
     width: @size;height:ceil(@size/1.4);border:@size/16 solid @basecolor;.border-radius(@size/8);
     &:before{
-        position: absolute;width: @size/16;height:@size/3;background-color:@basecolor;top:- ceil(@size/3);left:@size/4;.transform(rotate(-45deg));
+        position: absolute;width: @size/16;height:@size/3;background-color:@basecolor;top:0- ceil(@size/3);left:@size/4;.transform(rotate(-45deg));
     }
     &:after{
-        position: absolute;width: @size/16;height:@size/3;background-color:@basecolor;top:- ceil(@size/3);right:@size/4;.transform(rotate(-135deg));
+        position: absolute;width: @size/16;height:@size/3;background-color:@basecolor;top:0- ceil(@size/3);right:@size/4;.transform(rotate(-135deg));
     }
 }
 
@@ -341,7 +337,7 @@
 .licon-sun{
     width: @size/2;height:@size/2;border:@size/16 solid @basecolor;.border-radius(100%);
     &:before{
-        position: absolute;width: @size/8;height: @size/16;right: - @size/4;top: round(@size/6);background-color:@basecolor;display: block;.border-radius(@size/8);box-shadow: 0 -@size + @size/4 0 @basecolor;
+        position: absolute;width: @size/8;height: @size/16;right: 0-@size/4;top: round(@size/6);background-color:@basecolor;display: block;.border-radius(@size/8);box-shadow: 0-@size + @size/4 0 @basecolor;
     }
     &:after{
         position: absolute;width: @size/16;height: @size/8;right: round(@size/6);top: round(@size/2);background-color:@basecolor;display: block; .border-radius(@size/8);box-shadow: 0 0-@size + @size/4 0 @basecolor;
@@ -480,5 +476,91 @@
     width: ceil(@size/1.2);height: ceil(@size/1.2);border: @size/16 solid @basecolor;.border-radius(@size @size @size 0);.transform(rotate(-45deg));
     &:before{
         position: absolute;width: ceil(@size/5);height: ceil(@size/5);border: @size/16 solid @basecolor;.border-radius(50%);top: 50%;left:50%;.transform(translate(-50%, -50%));
+    }
+}
+
+
+
+
+/* i.licon-smile */
+.licon-smile{
+    .border-radius(50%);border: @size/16 solid @basecolor;height: ceil(@size/1.1);width: ceil(@size/1.1);
+    &:before{.border-radius(50%);background-color: @basecolor;box-shadow: ceil(@size/3.5) 0 0 0 @basecolor;height: ceil(@size/8);left: 22%;
+        position: absolute;top: 27%;width: ceil(@size/8);
+    }
+    &:after{.border-radius(50%);.transform(translateX(-50%));border-color: transparent transparent @basecolor transparent;border-style: solid;border-width: @size/16;height: ceil(@size/2);left:50%;
+        position: absolute;top: 6%;width: ceil(@size/2);
+    }
+}
+
+
+
+
+/* i.licon-eye */
+.licon-eye{
+    height: ceil(@size/1.25);width: ceil(@size/1.25);.border-radius(90% 10%~'/'90% 30%);.transform(rotate(45deg));overflow: hidden;
+    &:before{.border-radius(50%);.transform(translate(-50%, -50%));border: @size/10 solid transparent;height: ceil(@size/4);left: 50%;box-shadow: inset 0 0 0 ceil(@size/2), 0 0 0 ceil(@size/2);
+        position: absolute;top: 50%;width: ceil(@size/4);
+    }
+}
+
+
+
+
+/* i.licon-sliders */
+.licon-sliders{
+    &, &:before{
+        -webkit-box-sizing: content-box;box-sizing: content-box;width: ceil(@size - (@size/8));height: ceil(@size/6);border: @size/16 solid @basecolor;.border-radius(ceil(@size/8));
+    }
+    &:before{
+        position: absolute;top: ceil(@size/3);left: -1*ceil(@size/16);
+    }
+    &:after{
+        position: absolute;width: ceil(@size/3.5);height: ceil(@size/9);top: 1px;.border-radius(@size/16);background-color: @basecolor;box-shadow: -1*ceil(@size/4) ceil(@size/2.5) 0 0 @basecolor;
+    }
+}
+
+
+
+
+/* i.licon-share */
+.licon-share{
+    height: ceil(@size/3.8);width: ceil(@size/3.8);.border-radius(50%);background-color: @basecolor;box-shadow: ceil(@size/1.5) -1*ceil(@size/3) 0 0 @basecolor, ceil(@size/1.5) 1*ceil(@size/3) 0 0 @basecolor;margin: ceil(@size/3) ceil(@size/1.5) ceil(@size/3) 0;
+    &:before, &:after{
+        position: absolute;width: ceil(@size/1.5);height: ceil(@size/16);background-color: @basecolor;
+    }
+    &:before{
+        top:-1*ceil(@size/12);.transform(rotate(-25deg));
+    }
+    &:after{
+        top:ceil(@size/3.5);.transform(rotate(25deg));
+    }
+}
+
+
+
+
+/* i.licon-sync */
+.licon-sync{
+    width: ceil(@size/1.2);height: ceil(@size/1.2);.border-radius(50%);border-width: @size/16;border-style: solid;border-color: @basecolor transparent;
+    &:before, &:after{
+        position: absolute;width: 0;height: 0;border-width: ceil(@size/6);border-style: solid;border-color: @basecolor transparent transparent;
+    }
+    &:before{
+        .transform(rotate(-45deg));right: -1*ceil(@size/5);top:0;
+    }
+    &:after{
+        .transform(rotate(135deg));left: -1*ceil(@size/5);bottom: 0;
+    }
+}
+
+
+
+
+/* i.licon-reset */
+.licon-reset{
+    width: ceil(@size/1.2);height: ceil(@size/1.2);.border-radius(50%);border-width: @size/16;border-style: solid;border-color: @basecolor @basecolor @basecolor transparent;
+    &:before{
+        position: absolute;width: 0;height: 0;border-width: ceil(@size/6);border-style: solid;border-color: @basecolor transparent transparent;.transform(rotate(135deg));left: -1*ceil(@size/5);bottom: 0;
     }
 }

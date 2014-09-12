@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /*
     {Licon} is a simple, useful and lightness pack-icon that made with Pure CSS3 by Siamak Mokhtari (@sia_mac) at @FictionTeam.
-    It has Sass version so it can easily be modified and merged into modern projects.
-    It provides all the useful icons for good design without adding any images or fonts.
+    It has Sass version so it can easily be modified and merged into modern projects. 
+    It provides all the useful icons for good design without adding any images or fonts. 
 */
 [class^="licon-"] {
   display: inline-block;
@@ -10,46 +11,32 @@
   position: relative;
   font-style: normal;
 }
-[class^="licon-"]:before,
-[class^="licon-"]:after {
+[class^="licon-"]:before, [class^="licon-"]:after {
   content: '';
   pointer-events: none;
 }
+
 /* i.licon-disc */
 .licon-disc {
   width: 32px;
   height: 32px;
-  border: 2px solid #dddddd;
+  border: 10.66667px solid transparent;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
   position: relative;
   display: inline-block;
+  box-shadow: 0 0 0 2.66667px #dddddd inset, 0 0 0 2px #dddddd;
 }
-.licon-disc:before {
-  content: '';
-  width: 4px;
-  height: 4px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -4px;
-  margin-top: -4px;
-  border: 2px solid #dddddd;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -o-border-radius: 100%;
-  border-radius: 100%;
-}
+
 /* i.licon-reorder */
 .licon-reorder {
   width: 32px;
   height: 2px;
   background-color: #dddddd;
 }
-.licon-reorder:before,
-.licon-reorder:after {
+.licon-reorder:before, .licon-reorder:after {
   position: absolute;
   background-color: #dddddd;
   width: 32px;
@@ -62,6 +49,7 @@
 .licon-reorder:after {
   bottom: -8px;
 }
+
 /* i.licon-lock */
 .licon-lock {
   width: 32px;
@@ -88,10 +76,11 @@
   border-radius: 8px 8px 0 0;
   position: absolute;
   left: 6px;
-  top: - 8px;
+  top: -8px;
   border: 2px solid #dddddd;
   border-bottom-width: 0;
 }
+
 /* i.licon-bag */
 .licon-bag {
   width: 32px;
@@ -117,10 +106,11 @@
   border-radius: 8px 8px 0 0;
   position: absolute;
   left: 6px;
-  top: - 8px;
+  top: -8px;
   border: 2px solid #dddddd;
   border-bottom-width: 0;
 }
+
 /* i.licon-mug */
 .licon-mug {
   width: 32px;
@@ -141,8 +131,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  margin-left: -10.66666667px;
-  margin-top: 4.57142857px;
+  margin-left: -10.66667px;
+  margin-top: 4.57143px;
   border: 2px solid #dddddd;
   border-right-width: 0;
 }
@@ -155,6 +145,7 @@
   display: block;
   position: absolute;
 }
+
 /* i.licon-iphone */
 .licon-iphone {
   width: 32px;
@@ -183,6 +174,7 @@
   bottom: 4px;
   left: 13px;
 }
+
 /* i.licon-finder */
 .licon-finder {
   width: 32px;
@@ -215,6 +207,7 @@
   -o-border-radius: 100%;
   border-radius: 100%;
 }
+
 /* i.licon-trash */
 .licon-trash {
   width: 32px;
@@ -232,7 +225,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: - 5.71428571px;
+  margin-left: -10.28571px;
   margin-top: -25px;
   border: 2px solid #dddddd;
   border-bottom-width: 0;
@@ -247,6 +240,7 @@
   margin-top: -2px;
   margin-left: -4px;
 }
+
 /* i.licon-macbook */
 .licon-macbook {
   width: 32px;
@@ -271,6 +265,7 @@
   bottom: 2px;
   background-color: #c4c4c4;
 }
+
 /* i.licon-dollar */
 .licon-dollar,
 .licon-pound,
@@ -306,7 +301,7 @@
   border-radius: 100%;
   font-size: 11px;
   color: #5e5e5e;
-  font-family: Georgia, "Times New Roman", serif, sans;
+  font-family: Georgia,"Times New Roman",serif, sans;
   text-align: center;
 }
 .licon-dollar.licon-euro:after,
@@ -327,6 +322,7 @@
 .licon-yen.licon-yen:after {
   content: '¥';
 }
+
 /* i.licon-check */
 .licon-check {
   width: 32px;
@@ -365,6 +361,7 @@
   -o-border-radius: 8px;
   border-radius: 8px;
 }
+
 /* i.licon-remove */
 .licon-remove {
   width: 32px;
@@ -400,6 +397,7 @@
   -o-border-radius: 8px;
   border-radius: 8px;
 }
+
 /* i.licon-plus */
 .licon-plus {
   width: 32px;
@@ -432,6 +430,7 @@
   border-radius: 8px;
   left: 16px;
 }
+
 /* i.licon-magnifier */
 .licon-magnifier {
   width: 32px;
@@ -459,6 +458,7 @@
   -o-border-radius: 8px;
   border-radius: 8px;
 }
+
 /* i.licon-info */
 .licon-info {
   width: 32px;
@@ -488,6 +488,7 @@
   -o-border-radius: 8px;
   border-radius: 8px;
 }
+
 /* i.licon-mail */
 .licon-mail {
   width: 32px;
@@ -532,6 +533,7 @@
   -o-transform: rotate(-30deg);
   transform: rotate(-30deg);
 }
+
 /* i.licon-link */
 .licon-link {
   width: 32px;
@@ -571,6 +573,7 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 /* i.licon-tv */
 .licon-tv {
   width: 32px;
@@ -584,9 +587,9 @@
 .licon-tv:before {
   position: absolute;
   width: 2px;
-  height: 10.66666667px;
+  height: 10.66667px;
   background-color: #dddddd;
-  top: - 11px;
+  top: -11px;
   left: 8px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -597,9 +600,9 @@
 .licon-tv:after {
   position: absolute;
   width: 2px;
-  height: 10.66666667px;
+  height: 10.66667px;
   background-color: #dddddd;
-  top: - 11px;
+  top: -11px;
   right: 8px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -607,6 +610,7 @@
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
 /* i.licon-clock */
 .licon-clock {
   width: 32px;
@@ -620,10 +624,10 @@
 .licon-clock:before {
   position: absolute;
   width: 2px;
-  height: 10.66666667px;
+  height: 10.66667px;
   background-color: #dddddd;
   bottom: 12.8px;
-  left: 13.71428571px;
+  left: 13.71429px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -636,13 +640,14 @@
   height: 8px;
   background-color: #dddddd;
   bottom: 8px;
-  left: 10.66666667px;
+  left: 10.66667px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
 /* i.licon-user */
 .licon-user {
   width: 32px;
@@ -671,6 +676,7 @@
   -o-border-radius: 4px;
   border-radius: 4px;
 }
+
 /* i.licon-book */
 .licon-book {
   width: 32px;
@@ -699,6 +705,7 @@
   border-radius: 4px;
   left: 0;
 }
+
 /* i.licon-paper */
 .licon-paper {
   width: 25px;
@@ -710,7 +717,7 @@
   border-radius: 4px;
 }
 .licon-paper:before {
-  width: 10.66666667px;
+  width: 10.66667px;
   height: 2px;
   background-color: #dddddd;
   -webkit-border-radius: 4px;
@@ -731,10 +738,11 @@
   -o-border-radius: 4px;
   border-radius: 4px;
   position: absolute;
-  top: 2.28571429px;
+  top: 2.28571px;
   left: 1.6px;
   box-shadow: 0 8px 0 #dddddd, 0 16px 0 #dddddd;
 }
+
 /* i.licon-ban */
 .licon-ban {
   width: 32px;
@@ -762,6 +770,7 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 /* i.licon-arrowup */
 .licon-arrowup {
   width: 32px;
@@ -795,6 +804,7 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 /* i.licon-arrowdown */
 .licon-arrowdown {
   width: 32px;
@@ -828,11 +838,13 @@
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+
 /* fixed arrowdup and arrowdown in retina display */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .licon-arrowup:before {
     left: 10px;
   }
+
   .licon-arrowdown:before {
     left: 10px;
   }
@@ -870,6 +882,7 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 /* i.licon-arrowright */
 .licon-arrowright {
   width: 32px;
@@ -903,6 +916,7 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 /* i.licon-battery */
 .licon-battery {
   width: 28px;
@@ -918,7 +932,7 @@
   width: 4px;
   height: 8px;
   background-color: #dddddd;
-  right: - 4px;
+  right: -4px;
   top: 2px;
   -webkit-border-radius: 0 2px 2px 0;
   -moz-border-radius: 0 2px 2px 0;
@@ -938,6 +952,7 @@
   border-radius: 2px;
   box-shadow: 7px 0 0 #dddddd, 14px 0 0 #dddddd;
 }
+
 /* i.licon-sun */
 .licon-sun {
   width: 16px;
@@ -952,7 +967,7 @@
   position: absolute;
   width: 4px;
   height: 2px;
-  right: - 8px;
+  right: -8px;
   top: 5px;
   background-color: #dddddd;
   display: block;
@@ -960,7 +975,7 @@
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  box-shadow: 0 -24px 0 #dddddd;
+  box-shadow: -24px 0 #dddddd;
 }
 .licon-sun:after {
   position: absolute;
@@ -976,14 +991,14 @@
   border-radius: 4px;
   box-shadow: 0 -24px 0 #dddddd;
 }
+
 /* i.licon-certificate */
 .licon-certificate {
   height: 20px;
   width: 20px;
   background-color: #dddddd;
 }
-.licon-certificate:before,
-.licon-certificate:after {
+.licon-certificate:before, .licon-certificate:after {
   height: 20px;
   width: 20px;
   background-color: #dddddd;
@@ -1004,6 +1019,7 @@
   -o-transform: rotate(-30deg);
   transform: rotate(-30deg);
 }
+
 /* i.licon-imac */
 .licon-imac {
   width: 32px;
@@ -1024,13 +1040,440 @@
 }
 .licon-imac:after {
   width: 6.4px;
-  height: 5.33333333px;
+  height: 5.33333px;
   background-color: #d0d0d0;
   position: absolute;
-  left: 10.66666667px;
+  left: 10.66667px;
   bottom: -8px;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   -o-border-radius: 1px;
   border-radius: 1px;
+}
+
+/* i.licon-power */
+.licon-power {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+.licon-power:before {
+  position: absolute;
+  top: -15%;
+  left: 8px;
+  width: 2px;
+  height: 60%;
+  background-color: #dddddd;
+}
+
+/* i.licon-heart */
+.licon-heart {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #dddddd;
+  border-color: transparent #dddddd #dddddd transparent;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.licon-heart:before, .licon-heart:after {
+  position: absolute;
+  border: 2px solid #dddddd;
+}
+.licon-heart:before {
+  width: 9px;
+  height: 16px;
+  left: -10px;
+  bottom: -2px;
+  -webkit-border-radius: 22px 0 0 22px;
+  -moz-border-radius: 22px 0 0 22px;
+  -o-border-radius: 22px 0 0 22px;
+  border-radius: 22px 0 0 22px;
+  border-right-color: transparent;
+}
+.licon-heart:after {
+  width: 16px;
+  height: 9px;
+  right: -2px;
+  top: -10px;
+  -webkit-border-radius: 22px 22px 0 0;
+  -moz-border-radius: 22px 22px 0 0;
+  -o-border-radius: 22px 22px 0 0;
+  border-radius: 22px 22px 0 0;
+  border-bottom-color: transparent;
+}
+
+/* i.licon-infinity */
+.licon-infinity {
+  width: 32px;
+  height: 16px;
+}
+.licon-infinity:before, .licon-infinity:after {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 2px solid #dddddd;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.licon-infinity:before {
+  left: 1px;
+  -webkit-border-radius: 32px 0 32px 32px;
+  -moz-border-radius: 32px 0 32px 32px;
+  -o-border-radius: 32px 0 32px 32px;
+  border-radius: 32px 0 32px 32px;
+}
+.licon-infinity:after {
+  right: 1px;
+  -webkit-border-radius: 32px 32px 32px 0;
+  -moz-border-radius: 32px 32px 32px 0;
+  -o-border-radius: 32px 32px 32px 0;
+  border-radius: 32px 32px 32px 0;
+}
+
+/* i.licon-flag */
+.licon-flag {
+  width: 22px;
+  height: 25px;
+  border-left: 2.28571px solid #dddddd;
+}
+.licon-flag:before, .licon-flag:after {
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  border: 2px solid #dddddd;
+}
+.licon-flag:before {
+  left: -2px;
+  top: 1px;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  -o-border-radius: 0 2px 0 0;
+  border-radius: 0 2px 0 0;
+  border-right-width: 3px;
+}
+.licon-flag:after {
+  width: 5px;
+  left: 9px;
+  top: 4px;
+  border-left-width: 3px;
+  -webkit-border-radius: 2px 2px 0 2px;
+  -moz-border-radius: 2px 2px 0 2px;
+  -o-border-radius: 2px 2px 0 2px;
+  border-radius: 2px 2px 0 2px;
+}
+
+/* i.licon-file */
+.licon-file {
+  width: 25px;
+  height: 22px;
+  border: 2px solid #dddddd;
+  border-top-width: 0;
+  margin-top: 9px;
+}
+.licon-file:before, .licon-file:after {
+  position: absolute;
+  top: -9px;
+  border-style: solid;
+}
+.licon-file:before {
+  width: 0;
+  height: 0;
+  right: -2px;
+  border-width: 5.33333px;
+  border-color: transparent transparent #ddd #ddd;
+}
+.licon-file:after {
+  width: 13px;
+  height: 8px;
+  border-width: 2px 0 0 2px;
+  left: -2px;
+  border-color: #dddddd;
+}
+
+/* i.licon-folder */
+.licon-folder {
+  width: 32px;
+  height: 22px;
+  border: 2px solid #dddddd;
+  border-top-color: transparent;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+.licon-folder:before, .licon-folder:after {
+  position: absolute;
+}
+.licon-folder:before {
+  height: 5px;
+  width: 10px;
+  top: -6px;
+  left: -1px;
+  border: 2px solid #dddddd;
+  border-bottom-width: 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.licon-folder:after {
+  width: 17px;
+  height: 0;
+  right: 0;
+  top: -1px;
+  border-top: 2px solid #dddddd;
+}
+
+/* i.licon-pin */
+.licon-pin {
+  width: 27px;
+  height: 27px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 32px 32px 32px 0;
+  -moz-border-radius: 32px 32px 32px 0;
+  -o-border-radius: 32px 32px 32px 0;
+  border-radius: 32px 32px 32px 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.licon-pin:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* i.licon-smile */
+.licon-smile {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #dddddd;
+  height: 30px;
+  width: 30px;
+}
+.licon-smile:before {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #dddddd;
+  box-shadow: 10px 0 0 0 #dddddd;
+  height: 4px;
+  left: 22%;
+  position: absolute;
+  top: 27%;
+  width: 4px;
+}
+.licon-smile:after {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-color: transparent transparent #dddddd transparent;
+  border-style: solid;
+  border-width: 2px;
+  height: 16px;
+  left: 50%;
+  position: absolute;
+  top: 6%;
+  width: 16px;
+}
+
+/* i.licon-eye */
+.licon-eye {
+  height: 26px;
+  width: 26px;
+  -webkit-border-radius: 90% 10%/90% 30%;
+  -moz-border-radius: 90% 10%/90% 30%;
+  -o-border-radius: 90% 10%/90% 30%;
+  border-radius: 90% 10%/90% 30%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+.licon-eye:before {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 3.2px solid transparent;
+  height: 8px;
+  left: 50%;
+  box-shadow: inset 0 0 0 16px, 0 0 0 16px;
+  position: absolute;
+  top: 50%;
+  width: 8px;
+}
+
+/* i.licon-sliders */
+.licon-sliders, .licon-sliders:before {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 28px;
+  height: 6px;
+  border: 2px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.licon-sliders:before {
+  position: absolute;
+  top: 11px;
+  left: -2px;
+}
+.licon-sliders:after {
+  position: absolute;
+  width: 10px;
+  height: 4px;
+  top: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #dddddd;
+  box-shadow: -8px 13px 0 0 #dddddd;
+}
+
+/* i.licon-share */
+.licon-share {
+  height: 9px;
+  width: 9px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #dddddd;
+  box-shadow: 22px -11px 0 0 #dddddd, 22px 11px 0 0 #dddddd;
+  margin: 11px 22px 11px 0;
+}
+.licon-share:before, .licon-share:after {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #dddddd;
+}
+.licon-share:before {
+  top: -3px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+.licon-share:after {
+  top: 10px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+
+/* i.licon-sync */
+.licon-sync {
+  width: 27px;
+  height: 27px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #dddddd transparent;
+}
+.licon-sync:before, .licon-sync:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #dddddd transparent transparent;
+}
+.licon-sync:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: -7px;
+  top: 0;
+}
+.licon-sync:after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  left: -7px;
+  bottom: 0;
+}
+
+/* i.licon-reset */
+.licon-reset {
+  width: 27px;
+  height: 27px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #dddddd #dddddd #dddddd transparent;
+}
+.licon-reset:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #dddddd transparent transparent;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  left: -7px;
+  bottom: 0;
 }

@@ -64,6 +64,12 @@ Then You add `.licon-*` in HTML files. Also you can see licon's icons:
 * `i.licon-file`
 * `i.licon-folder`
 * `i.licon-pin`
+* `i.licon-smile`
+* `i.licon-eye`
+* `i.licon-sliders`
+* `i.licon-share`
+* `i.licon-sync`
+* `i.licon-reset`
 
 ### License
 
