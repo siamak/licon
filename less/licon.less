@@ -564,3 +564,18 @@
         position: absolute;width: 0;height: 0;border-width: ceil(@size/6);border-style: solid;border-color: @basecolor transparent transparent;.transform(rotate(135deg));left: -1*ceil(@size/5);bottom: 0;
     }
 }
+
+
+/* i.licon-cloud */
+.licon-cloud {
+  @cloud-main-size: ceil(@size * 0.65);
+  @cloud-left-size: ceil(@cloud-main-size/2.1);
+  @cloud-right-size: ceil(@cloud-main-size/1.8);
+  position: relative; background: @basecolor; width: @cloud-main-size; height: @cloud-main-size; .border-radius(50% 50% 0 0);
+  &:before {
+    width: @cloud-left-size; height: @cloud-left-size; background: @basecolor; display: block; left: ceil(@cloud-left-size/-2); position: absolute; bottom: 0; .border-radius(50% 0 0 50%);
+  }
+  &:after {
+    width: @cloud-right-size; height: @cloud-right-size; background: @basecolor; display: block; right: ceil(@cloud-right-size/-2); position: absolute; bottom: 0; .border-radius(0 50% 50% 0);
+  }
+}
